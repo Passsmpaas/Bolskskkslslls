@@ -10,8 +10,8 @@ from config import BOT_TEXT, CHANNEL_ID, CHANNEL_ID2, THUMB_URL
 bot = Client(
     "CW",
     bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+    api_id=int(os.environ.get("22470912")),
+    api_hash=os.environ.get("511be78079ed5d4bd4c967bc7b5ee023")
 )
 
 # --- /start Command ---
