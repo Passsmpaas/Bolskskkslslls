@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: careerwill-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 main.py"
+    envVars:
+      - key: BOT_TOKEN
+        fromDatabase: true
+      - key: API_ID
+        fromDatabase: true
+      - key: API_HASH
+        fromDatabase: true
+    autoDeploy: true
+    
